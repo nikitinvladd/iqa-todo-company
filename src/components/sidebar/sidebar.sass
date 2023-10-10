@@ -1,0 +1,89 @@
+// Стили для светлой темы
+$light-background-color: #0584F2
+$light-text-color: #2C3E50
+$light-link-hover: #0579DD
+
+// Стили для темной темы
+$dark-background-color: #0E1117
+$dark-link-hover: #191a1c
+$dark-text-color: #fff
+.sidebar
+    z-index: 101
+    position: fixed
+    left: 0
+    bottom: 0
+    height: 100%
+    width: 80px
+    background-color: $light-background-color
+
+.dark-theme
+    .sidebar
+        background-color: $dark-background-color
+        border-right: 1px solid #21262C
+    .menu-box
+        background-color: $dark-background-color
+
+.menu
+    .menu-link
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 80px
+    img
+        width: 25px
+        height: 25px
+.menu-link
+    &:hover
+        background-color: $light-link-hover
+
+.dark-theme
+    .menu-link
+        &:hover
+            background-color: $dark-link-hover
+.menu-box
+    z-index: 101
+    position: absolute
+    display: none
+    top: 0
+    bottom: 0
+    height: 100%
+    width: 250px
+    background-color: #fff
+    box-shadow: 5px 0 5px -5px rgba(0,0,0,.1)
+.menu:hover .menu-box
+    display: block
+    left: 80px
+.menu-logo
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 80px
+    img
+        height: 35px
+        width: 35px
+.item-menu
+    display: flex
+    align-items: center
+    color: black
+    height: 61px
+    padding: 5px 20px
+    font-size: 14px
+    position: relative
+    border-bottom: 1px solid #e5e5e5
+    &:hover
+        background-color: #f6f8fd
+.dark-theme
+    .item-menu
+        color: #fff
+        border-bottom: 1px solid #21262C
+        &:hover
+            background-color: $dark-link-hover
+.item-menu-title
+    display: flex
+    align-items: center
+    font-size: 18px
+    font-weight: 700
+    padding: 0 30px 0 20px
+    position: relative
+    border-bottom: 1px solid #e5e5e5
+    height: 80px

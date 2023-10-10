@@ -1,0 +1,44 @@
+// Стили для светлой темы
+$light-background-color: #fff
+$light-text-color: #2C3E50
+$light-link-hover: #0579DD
+
+// Стили для темной темы
+$dark-background-color: #0E1117
+$dark-link-hover: #191a1c
+$dark-text-color: #fff
+.header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 80px
+    z-index: 200
+    border-bottom: 1px solid #e5e5e5
+    margin-left: 80px
+    background: $light-background-color
+    padding: 0 30px 0 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0 1px 2px rgba(31,40,44,.05)
+.color-modes
+    color: black
+.dark-theme
+    .color-modes
+        color: #fff
+.dark-theme
+    .header
+        background: $dark-background-color
+        border-bottom: 1px solid #30363C
+.header-title
+    font-size: 18px
+    font-weight: 700
+    margin-right: auto
+    max-width: 600px
+    white-space: nowrap
+    overflow: hidden
+    color: #000
+.dark-theme
+    .header-title
+        color: $dark-text-color

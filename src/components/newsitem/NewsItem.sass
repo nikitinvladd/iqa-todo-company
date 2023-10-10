@@ -1,0 +1,44 @@
+.news-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin-left: 10vh
+.news-card
+    flex-basis: calc(30% - 20px)
+    border: 1px solid #ccc
+    border-radius: 5px
+    margin: 10px
+    padding: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-height: 450px
+    min-height: 450px /* Установите максимальную высоту карточки */
+    overflow: hidden /* Скрыть избыточный текст */
+
+.news-image
+    max-width: 100%
+    height: auto
+
+.news-content
+    text-align: center
+    margin-top: 10px
+
+.news-title
+    font-size: 1.5rem
+    font-weight: bold
+.dark-theme
+    .news-title
+        color: #e9e9e9
+    .news-card
+        border: 1px solid #21262C
+.news-description
+    font-size: 1rem
+    margin-top: 5px
+
+.news-link
+    margin-top: 10px
+    text-decoration: none
+    color: #007bff
+    font-weight: bold

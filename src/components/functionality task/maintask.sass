@@ -1,0 +1,156 @@
+// Стили для светлой темы
+$light-background-color: #fff
+$light-text-color: #2C3E50
+$light-button-background: #0584F2
+
+// Стили для темной темы
+$dark-background-color: #02040A
+$dark-text-color: #fff
+$dark-button-background: #0579DD
+.maintaskfunctionality
+    display: flex
+    height: 90vh
+    width: 100%
+    margin-left: 80px
+    margin-top: 80px
+    background-color: #f6f8fd
+    z-index: 5
+    color: #2C3E50
+.dark-theme
+    .maintaskfunctionality
+        background-color: $dark-background-color
+    .alltask
+        background-color: #0E1117
+        border-right: 1px solid #21262C
+    .task-list
+        background-color: #0a0d11
+        border-bottom: 1px solid #21262C
+    .delete-name-btn
+        background-color: #21262C
+        border: 1px solid #3e4955
+    .eddit-name-btn
+        background-color: #21262C
+        border: 1px solid #3e4955
+    .task-name
+        color: #d5d5d5
+    .add-task-btn
+        background-color: #238636
+        &:hover
+            background-color: #26943c
+    .enter-task
+        button
+            background-color: #238636
+            &:hover
+                background-color: #26943c
+    .new-project
+        color: #d5d5d5
+.addyourtask
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    left: 92vw
+    bottom: 30px
+    z-index: 200
+    color: #fff
+    width: 70px
+    height: 70px
+    border-radius: 100%
+    background-color: #0584F2
+    &:hover
+        background-color: #0579DD
+    img
+        width: 25px
+        height: 25px
+.add-task-input
+    font-size: 13px
+    border: 1px solid #e5e5e5
+    border-radius: 3px
+    outline: none
+    padding: 9px 32px 9px 15px
+    height: 34px
+    min-width: 300px
+    transition: background-color .25s linear
+
+.add-task-btn
+    width: 120px
+    height: 40px
+    background-color: #0584F2
+    color: #f3f3f3
+    border-radius: 3px
+    &:hover
+        background-color: #0579DD
+.enter-task
+    display: flex
+    flex-direction: column
+    margin-left: 40px
+    margin-top: 10px
+    .enter-task-btn
+        width: 90px
+        margin-left: 1px
+        height: 35px
+        background-color: #0584F2
+        color: #f3f3f3
+        border-radius: 3px
+        &:hover
+            background-color: #0579DD
+.add-new-project
+    display: flex
+    flex-direction: column
+    height: 500px
+
+.enter-form
+    display: none
+    margin-top: 10px
+
+.enter-form.active
+    display: block
+
+.delete-name-btn,
+.eddit-name-btn
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    min-width: 25px /* Минимальная ширина */
+    min-height: 25px /* Минимальная высота */
+    border: 1px solid #e5e5e5
+    border-radius: 3px
+    margin-left: 6px
+    padding: 0 5px/* Добавляем небольшие отступы вокруг текста */
+
+.btns
+    display: flex
+    margin-right: 10px
+/* Hover-эффект */
+.delete-name-btn:hover,
+.eddit-name-btn:hover
+    background-color: #f3f3f3
+
+.new-project
+    margin-top: 20px
+    margin-left: 40px
+    font-size: 1.2rem
+.add-name-task
+    display: flex
+.alltask
+    height: 90vh
+    width: 300px
+    background-color: #fff
+    border-right: 1px solid #e5e5e5
+    z-index: 6
+.task-list
+    display: flex
+    align-items: center
+    background-color: #f6f8fd
+    max-width: 300px
+    min-height: 50px
+    height: auto
+    margin-top: 3px
+.task-name
+    max-width: 300px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    color: #0584F2
+    padding-left: 1.5rem
