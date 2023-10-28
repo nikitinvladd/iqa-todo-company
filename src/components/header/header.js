@@ -40,8 +40,8 @@ const Header = ({ toggleTheme, isDarkTheme, onFilter }) => {
         <img
         src={isDarkTheme ? "img/moon.webp" : "img/sun.webp"}
         alt='toggle button on dark theme or light theme'
-          className={classNames('h-4 w-4 bg-yellow-500 rounded-full transition-all shadow-lg duration-500', {
-            'ml-3 bg-gray-600': isDarkTheme,
+          className={classNames('h-4 w-4 bg-yellow-400 rounded-full transition-all shadow-lg duration-500', {
+            'ml-3 bg-gray-800': isDarkTheme,
           })}
         />
       </div>
