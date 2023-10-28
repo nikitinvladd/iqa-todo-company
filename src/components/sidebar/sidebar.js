@@ -1,41 +1,41 @@
+import { Link } from 'react-router-dom';
 import './sidebar.sass'
 const Sidebar = () => {
     return(
         <div className="sidebar">
             <div className="sidebar-menu">
                 <div className="menu-logo">
-                    <a href="/"><img src="/img/logo.png" alt="logo" /></a>
+                    <Link to="/"><img src="/img/logo.webp" alt="logo" /></Link>
                 </div>
                 <div className="menu menu-user">
-                    <a className="menu-link" href="/"><img src="/img/user.svg" alt="user" /></a>
+                    <Link className="menu-link" to="/"><img src="/img/user.svg" alt="user" /></Link>
                     <div className="menu-box">
                         <div className="item-menu-title">Prospects</div>
-                        <a href="/" className="item-menu">Login</a>
-                        <a href="/" className="item-menu">Register</a>
+                        <Link to="/userlogin" className="item-menu">Login</Link>
+                        <Link to="/userregister" className="item-menu">Register</Link>
                     </div>
                 </div>
                 <div className="menu menu-task">
-                    <a className="menu-link" href="/tasks"><img src="/img/tasks.svg" alt="task" /></a>
+                    <Link className="menu-link" to="/createtask"><img src="/img/tasks.svg" alt="task" /></Link>
                     <div className="menu-box">
                         <div className="item-menu-title">Your Mission</div>
-                        <a href="/functionality task" className="item-menu">Your Task</a>
-                        <a href="/" className="item-menu">Planed your week</a>
+                        <Link to="/createtask" className="item-menu">Your Task</Link>
+                        <Link to="/" className="item-menu">Planed your week</Link>
                     </div>
                 </div>
                 <div className="menu menu-analytics">
-                    <a className="menu-link" href="/"><img src="/img/analytics.svg" alt="analytics" /></a>
+                    <Link className="menu-link" to="/"><img src="/img/analytics.svg" alt="analytics" /></Link>
                     <div className="menu-box">
                         <div className="item-menu-title">Your Analytics</div>
-                        <a href="/" className="item-menu">Your Company Analytics</a>
-                        <a href="/" className="item-menu">Your Analytics</a>
+                        <Link to="/" className="item-menu">Company Analytics</Link>
+                        <Link to="/" className="item-menu">Your Analytics</Link>
                     </div>
                 </div>
                 <div className="menu menu-analytics">
-                    <a className="menu-link" href="/"><img src="/img/calendar.svg" alt="calendar" /></a>
+                    <Link className="menu-link" to="/calendar"><img src="/img/calendar.svg" alt="calendar" /></Link>
                     <div className="menu-box">
                         <div className="item-menu-title">Your Calendar</div>
-                        <a href="/" className="item-menu">Calendar</a>
-                        <a href="/" className="item-menu">Meet at this week</a>
+                        <Link to="/calendar" className="item-menu">Calendar</Link>
                     </div>
                 </div>
             </div>

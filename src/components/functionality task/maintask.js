@@ -8,7 +8,7 @@ class MainTaskFunctionality extends Component {
         super(props);
         this.state = {
           isEditing: false,
-          updatedTask: props.task, // Используется для редактирования
+          updatedTask: props.task, 
         };
       }
 
@@ -19,7 +19,7 @@ class MainTaskFunctionality extends Component {
       handleSaveClick = () => {
         const { id, onEdit } = this.props;
         const { updatedTask } = this.state;
-        onEdit(id, updatedTask); // Передаем ID и обновленную задачу
+        onEdit(id, updatedTask); 
         this.setState({ isEditing: false });
       };
     
@@ -30,11 +30,11 @@ class MainTaskFunctionality extends Component {
 render() {
     const { id, task, onDelete } = this.props;
     const { isEditing, updatedTask } = this.state;
+    
     return(
             <div className="block-task-list">
                 <div className="task-list">
                 {isEditing ? (
-            // Форма редактирования задачи
             <div>
               <input
                 type="text"
@@ -44,18 +44,16 @@ render() {
               <button onClick={this.handleSaveClick}>Сохранить</button>
             </div>
           ) : (
-            // Отображение задачи
-            <Link to={`/task/${id}`} className="task-name">
+          <Link to={`task/${id}`} className="task-name">
             {task}
           </Link>
           )}
-                    {/* <a href="/" className="task-name">{task}</a> */}
-                    <div className="btns">
+                  <div className="btns">
                     <button onClick={onDelete} className="delete-name-btn"><img src="img/trash.svg" alt="" /></button>
                     <button onClick={this.handleEditClick} className="eddit-name-btn"><img src="img/eddit.svg" alt="" /></button>
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </div>
+          </div>
     )
 }
 }

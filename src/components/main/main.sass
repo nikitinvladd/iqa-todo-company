@@ -1,9 +1,7 @@
-// Стили для светлой темы
 $light-background-color: #fff
 $light-text-color: #2C3E50
 $light-button-background: #0584F2
 
-// Стили для темной темы
 $dark-background-color: #02040A
 $dark-text-color: #fff
 $dark-button-background: #0579DD
@@ -15,14 +13,11 @@ $dark-button-background: #0579DD
     margin-top: 80px
     width: 100%
     margin-left: 60px
-    height: 100vh
+    height: 90.9vh
     background-color: $light-background-color // Используем переменную
 .dark-theme
     .main
         background-color: $dark-background-color
-.main-information
-    display: flex
-    flex-direction: column
 
 .main-title
     width: 80%
@@ -35,7 +30,7 @@ $dark-button-background: #0579DD
     .main-title
         color: $dark-text-color
     .main-description
-        color: #3b424a
+        color: #686868
     .blank-button
         background-color: #238636
     .start-text
@@ -74,13 +69,23 @@ $dark-button-background: #0579DD
 
     &:hover
         background-color: #0579DD
-
-@media only screen and (max-width: 1440px)
-.main
-    background-position-x: 460px
-    height: 90vh
-    background-size: 78%
-
 .main-information
     margin-left: 140px
     margin-bottom: 100px
+
+@media only screen and (max-width: 1024px)
+    .start-text
+        font-size: 9.5px
+    .main-information
+        margin-left: 140px
+    .main-title
+        width: 100%
+        line-height: 3.5rem
+        font-size: 3rem
+    .main-description
+        font-size: 14px
+    .main-img
+        margin-right: 130px
+        img
+            width: 520px
+    

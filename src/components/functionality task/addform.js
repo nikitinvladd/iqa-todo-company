@@ -17,11 +17,12 @@ class AddForm extends Component {
     }
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.onAdd(this.state.task)
+        if(this.state.task < 1) return;
+        this.props.onAdd(this.state.task);
         this.setState({
             task: ''
-        })
-    }
+        });
+        }
     onToggleTask = () => {
         this.setState(prevState => ({
             isFormVisible: !prevState.isFormVisible
@@ -33,7 +34,7 @@ class AddForm extends Component {
         return(
             <div className="add-new-project">
             <div className="add-name-task">
-                <div className="new-project">New Prospects List</div>
+                <div className="new-project">New Prospects</div>
             </div>
             <div className="enter-task">
             <button onClick={this.onToggleTask}  className='add-task-btn'>Add Task</button>
